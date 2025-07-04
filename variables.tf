@@ -1,16 +1,6 @@
 ##################################################################################
 # VARIABLES
 ##################################################################################
-variable "aws_access_key" {
-  type        = string
-  description = "(Optional) AWS Region to use. Default: us-east-1"
-}
-
-variable "aws_secret_key" {
-  type        = string
-  description = "(Optional) AWS Region to use. Default: us-east-1"
-}
-
 variable "region" {
   type        = string
   description = "(Optional) AWS Region to use. Default: us-east-1"
