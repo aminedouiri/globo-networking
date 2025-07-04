@@ -13,8 +13,6 @@ jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
-    env:
-      TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
     # Use the Bash shell regardless whether the GitHub Actions runner is 
     # ubuntu-latest, macos-latest, or windows-latest
     defaults:
@@ -29,6 +27,10 @@ jobs:
     # Install the preferred version of Terraform CLI 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v2
+
+    - name: Terraform Login
+      id: login
+      run: terraform login
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
