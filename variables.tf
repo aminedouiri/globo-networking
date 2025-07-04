@@ -32,3 +32,9 @@ variable "billing_code" {
   type        = number
   description = "(Optional) Billing code to use for all resources in this module."
 }
+
+variable "environment" {
+  type        = string
+  description = "(Optional) Environment to use for all resources in this module. Default: dev"
+  default     = "dev"
+}
