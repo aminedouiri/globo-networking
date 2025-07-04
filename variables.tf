@@ -28,3 +28,7 @@ variable "public_subnets" {
   }
 }
 
+variable "biling_code" {
+  type        = number
+  description = "(Optional) Billing code to use for all resources in this module."
+}
