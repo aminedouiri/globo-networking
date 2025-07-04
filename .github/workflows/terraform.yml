@@ -12,7 +12,6 @@ env:
   TF_TOKEN_app_terraform_io: "${{ secrets.TF_API_TOKEN }}"
   TF_WORKSPACE: "web-network-dev"
   CONFIG_DIRECTORY: "./"
-  
 
 jobs:
   terraform:
