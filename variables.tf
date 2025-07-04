@@ -1,7 +1,15 @@
 ##################################################################################
 # VARIABLES
 ##################################################################################
+variable "access_key" {
+  type        = string
+  description = "(Optional) AWS Region to use. Default: us-east-1"
+}
 
+variable "secret_key" {
+  type        = string
+  description = "(Optional) AWS Region to use. Default: us-east-1"
+}
 
 variable "region" {
   type        = string
